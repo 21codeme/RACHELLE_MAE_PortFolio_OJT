@@ -9,19 +9,19 @@ export function Appendices() {
   const [zoom, setZoom] = useState(100);
   
   const appendices = [
-    { id: 'A', title: 'Evaluation Form', uploadDate: 'April 2026', icon: '📄', imagePaths: ['/eval-grades.jpg'] },
+    { id: 'A', title: 'Evaluation Form', uploadDate: 'April 2026', icon: '📄', imagePaths: ['/eval-grades-1.jpg', '/eval-grades-2.jpg'] },
     { id: 'B', title: 'Photocopy Registration Form', uploadDate: 'April 2026', icon: '📋', imagePaths: ['/cor.jpg'] },
-    { id: 'C', title: 'Photocopy Validated ID', uploadDate: 'April 2026', icon: '🆔', imagePaths: ['/validated-id-1.jpg', '/validated-id-2.jpg'] },
+    { id: 'C', title: 'Photocopy Validated ID', uploadDate: 'April 2026', icon: '🆔', imagePaths: ['/validated-id-1.jpg'] },
     { id: 'D', title: "Parent's Consent", uploadDate: 'April 2026', icon: '📝', imagePaths: ['/parent-consent.jpg'] },
     { id: 'E', title: 'Medical Certificate', uploadDate: 'April 2026', icon: '⚕️', imagePaths: ['/medical-certificate.jpg'] },
     { id: 'F', title: 'Certificate of Good Moral Character', uploadDate: 'April 2026', icon: '✅', imagePaths: ['/good-moral.jpg'] },
     { id: 'G', title: 'Application Letter', uploadDate: 'April 2026', icon: '💌', imagePaths: ['/application-letter.jpg'] },
     { id: 'H', title: 'Endorsement Letter', uploadDate: 'April 2026', icon: '📮', imagePaths: ['/endorsement-letter.jpg'] },
     { id: 'I', title: 'Memorandum of Agreement', uploadDate: 'April 2026', icon: '📑', imagePaths: ['/moa.jpg'] },
-    { id: 'J', title: 'Daily Time Record (Time Card)', uploadDate: 'April 2026', icon: '⏰', imagePaths: ['/dtr-1.jpg', '/dtr-2.jpg', '/dtr-3.jpg', '/dtr-4.jpg' ] },
+    { id: 'J', title: 'Daily Time Record (Time Card)', uploadDate: 'April 2026', icon: '⏰', imagePaths: ['/dtr-1.jpg', '/dtr-2.jpg'] },
     { id: 'K', title: 'Certificate of Completion', uploadDate: 'April 2026', icon: '🎓', imagePaths: ['/cert-completion.jpg'] },
     { id: 'L', title: 'Certificate of Clearance', uploadDate: 'April 2026', icon: '✔️', imagePaths: ['/cert-clearance.jpg'] },
-    { id: 'M', title: 'Performance/Proficiency Rating Sheet', uploadDate: 'April 2026', icon: '📊', imagePaths: ['/cert-completion.jpg'] },
+    { id: 'M', title: 'Performance/Proficiency Rating Sheet', uploadDate: 'April 2026', icon: '📊', imagePaths: ['/rating-sheet.jpg'] },
   ];
 
   const handleOpenAppendix = (appendix) => {
@@ -98,7 +98,7 @@ export function Appendices() {
                 <div className='relative aspect-square bg-background overflow-hidden'>
                   <img
                     src='/pre-seminar-1.jpg'
-                    alt='Pre-Service Seminar - Event Activities'
+                    alt='Pre-Service Seminar - Certificate of Attendance'
                     className='w-full h-full object-cover group-hover:scale-105 transition-transform duration-300'
                   />
                   <div className='absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4'>
@@ -132,7 +132,7 @@ export function Appendices() {
               </p>
             </div>
 
-            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
+              <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
               <div className='rounded-lg overflow-hidden border border-border/50 hover:border-primary/50 transition-colors group'>
                 <div className='relative aspect-square bg-background overflow-hidden'>
                   <img
@@ -295,18 +295,11 @@ export function Appendices() {
                 This section contains the official evaluation form used to assess the intern's overall performance during the On-the-Job Training. It includes ratings, comments, and final assessment from the supervisor and evaluators.
               </p>
 
-              <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
-                <div className='rounded-lg overflow-hidden border border-border/50 bg-background aspect-[8.5/11]'>
+              <div className='flex justify-center'>
+                <div className='rounded-lg overflow-hidden border border-border/50 bg-background max-w-xl w-full aspect-[8.5/11]'>
                   <img
                     src='/evaluation-form-page1.jpg'
-                    alt='OJT Evaluation Form Page 1'
-                    className='w-full h-full object-cover'
-                  />
-                </div>
-                <div className='rounded-lg overflow-hidden border border-border/50 bg-background aspect-[8.5/11]'>
-                  <img
-                    src='/evaluation-form-page2.jpg'
-                    alt='OJT Evaluation Form Page 2'
+                    alt='OJT Evaluation Form'
                     className='w-full h-full object-cover'
                   />
                 </div>
